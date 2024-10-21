@@ -1,8 +1,13 @@
 import React from 'react'
+import SliderComponent from '../components/SliderComponent'
 
 const HomeScreen = () => {
   return (
-    <div>HomeScreen</div>
+    <div>
+      <SliderComponent/>
+      
+      <h1>HomeScreen</h1>
+    </div>
   )
 }
 
