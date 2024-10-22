@@ -22,6 +22,8 @@ const ContactScreen = () => {
         <div className='w-full md:w-1/2 container mx-auto px-10 md:px-0 hover:-rotate-6 transition-all duration-300 ease-in-out hover:scale-105'>
 
           <iframe 
+            title="Map showing location of Imouzzer-Kandar"
+            
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16642.712858829134!2d-5.014657849999999!3d33.7303351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd9f81adb97f7ca5%3A0xc4306de9d22dc415!2sImouzzer-Kandar!5e1!3m2!1sfr!2sma!4v1729585786423!5m2!1sfr!2sma" 
 
             className='w-full h-[500px] rounded-lg'
