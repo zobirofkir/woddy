@@ -61,7 +61,7 @@ const FooterComponent = () => {
             </a>
           </div>
         </div>
-
+ 
       </div>
       
       {/* Footer Bottom */}
