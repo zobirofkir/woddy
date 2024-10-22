@@ -1,18 +1,32 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const LastProductComponent = () => {
+    const [categories, setCategories] = useState([]);
+
+    const categoriesData = [
+        "Dinning",
+        "Chair",
+        "Bes",
+        "Kitchen",
+        "Shelves"
+    ];
+    
+    useEffect(() => {
+        setCategories(categoriesData)
+    }, []);
+
   return (
     <div className='container mx-auto'>
-        <div className='flex justify-center py-8'>
-            <h1 className='text-3xl md:text-4xl font-bold text-gray-900'>Our New Exclusive Collections</h1>
+        <div className='flex justify-center md:py-10 py-5'>
+            <h1 className='text-2xl md:text-4xl whitespace-nowrap font-bold text-gray-900'>Our New Exclusive Collections</h1>
         </div>
 
-        <div className='flex justify-start md:justify-center gap-3 md:gap-10 w-full py-8 overflow-x-auto whitespace-nowrap'>
-            <button className='bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-6 sm:px-8 md:px-10 rounded-full transition duration-300 ease-in-out'>Dinning</button>
-            <button className='bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-6 sm:px-8 md:px-10 rounded-full transition duration-300 ease-in-out'>Chair</button>
-            <button className='bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-6 sm:px-8 md:px-10 rounded-full transition duration-300 ease-in-out'>Bed</button>
-            <button className='bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-6 sm:px-8 md:px-10 rounded-full transition duration-300 ease-in-out'>Kitchen</button>
-            <button className='bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-6 sm:px-8 md:px-10 rounded-full transition duration-300 ease-in-out'>Shelves</button>
+        <div className='flex justify-start md:justify-center gap-3 md:gap-10 w-full py-8 overflow-x-auto whitespace-nowrap px-2 md:px-0'>
+            {
+                categories.map((category, index) => {
+                   return <button className='bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-6 sm:px-8 md:px-10 rounded-full transition duration-300 ease-in-out' key={index}>{category}</button>
+                })
+            }
         </div>
 
         <div className='container mx-auto hover:shadow-2xl hover:shadow-gray-300 rounded-lg flex justify-center gap-10 w-full px-5 py-8 transition duration-300 ease-in-out'>
