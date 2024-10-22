@@ -15,7 +15,7 @@ const AboutScreen = () => {
         </div>
 
         <div>
-          <img src='https://media.istockphoto.com/id/943910360/photo/posters-in-cozy-apartment-interior.jpg?s=612x612&w=0&k=20&c=QzNjsxCNMcFNxpn4E2ocPvSU8Ud2S3B_mHyo5L-HOLo=' alt='test image furniture' className='w-full h-auto rounded-lg object-cover hover:rotate-6 ease-in-out duration-300 hover:scale-105'/>
+          <img src='https://media.istockphoto.com/id/943910360/photo/posters-in-cozy-apartment-interior.jpg?s=612x612&w=0&k=20&c=QzNjsxCNMcFNxpn4E2ocPvSU8Ud2S3B_mHyo5L-HOLo=' alt='test image furniture' className='w-full h-auto rounded-lg object-cover hover:-rotate-6 ease-in-out duration-300 hover:scale-105'/>
         </div>
       </div>
     </div>
