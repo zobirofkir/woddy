@@ -47,7 +47,7 @@ const ProductComponent = () => {
 
     useEffect(() => {
         setProducts(productsData)
-    }, []);
+    }, [productsData]);
 
   return (
     <>

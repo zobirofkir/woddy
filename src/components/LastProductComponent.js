@@ -13,7 +13,7 @@ const LastProductComponent = () => {
     
     useEffect(() => {
         setCategories(categoriesData)
-    }, []);
+    }, [categoriesData]);
 
   return (
     <div className='container mx-auto'>
