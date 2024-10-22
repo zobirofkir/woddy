@@ -1,14 +1,14 @@
 import React from 'react'
 import SliderComponent from '../components/SliderComponent'
 import ProductComponent from '../components/ProductComponent'
-import LastProduct from '../components/LastProduct'
+import LastProductComponent from '../components/LastProductComponent'
 
 const HomeScreen = () => {
   return (
     <div>
       <SliderComponent/>
       
-      <LastProduct/>
+      <LastProductComponent/>
       
       <ProductComponent/>
     </div>

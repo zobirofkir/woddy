@@ -1,6 +1,6 @@
 import React from 'react'
 
-const LastProduct = () => {
+const LastProductComponent = () => {
   return (
     <div className='container mx-auto'>
         <div className='flex justify-between w-full px-5 py-8'>
@@ -31,4 +31,4 @@ const LastProduct = () => {
   )
 }
 
-export default LastProduct
+export default LastProductComponent
