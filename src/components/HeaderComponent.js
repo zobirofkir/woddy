@@ -27,7 +27,7 @@ const HeaderComponent = () => {
               <a href='/'>Home</a>
             </li>
             <li className='text-black font-medium'>
-              <a href='/about'>About</a>
+              <a href='/abouts'>About</a>
             </li>
             <li className='text-black font-medium'>
               <a href='/contacts'>Contact</a>
