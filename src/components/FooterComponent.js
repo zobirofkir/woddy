@@ -47,16 +47,16 @@ const FooterComponent = () => {
         <div>
           <h3 className='text-xl font-bold mb-4 text-black'>Follow Us</h3>
           <div className='flex space-x-4'>
-            <a href='#' className='text-gray-400 hover:text-black transition-colors'>
+            <a href=' ' className='text-gray-400 hover:text-black transition-colors'>
               <i className='fab fa-facebook-f'></i>
             </a>
-            <a href='#' className='text-gray-400 hover:text-black transition-colors'>
+            <a href=' ' className='text-gray-400 hover:text-black transition-colors'>
               <i className='fab fa-twitter'></i>
             </a>
-            <a href='#' className='text-gray-400 hover:text-black transition-colors'>
+            <a href=' ' className='text-gray-400 hover:text-black transition-colors'>
               <i className='fab fa-instagram'></i>
             </a>
-            <a href='#' className='text-gray-400 hover:text-black transition-colors'>
+            <a href=' ' className='text-gray-400 hover:text-black transition-colors'>
               <i className='fab fa-linkedin'></i>
             </a>
           </div>
