@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 
 const LastProductComponent = () => {
     const [categories, setCategories] = useState([]);
 
-    const categoriesData = [
-        "Dinning",
+    const categoriesData = useMemo(() => [
+        "Dining",
         "Chair",
-        "Bes",
+        "Bed",
         "Kitchen",
         "Shelves"
-    ];
-    
+    ], []);
+
     useEffect(() => {
         setCategories(categoriesData)
     }, [categoriesData]);

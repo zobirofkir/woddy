@@ -1,49 +1,50 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 
 const ProductComponent = () => {
     const [products, setProducts] = useState([]);
 
-    const productsData = [
-        {
-            id: 1,
-            name: 'Product 1',
-            image: 'https://media.istockphoto.com/id/943910360/photo/posters-in-cozy-apartment-interior.jpg?s=612x612&w=0&k=20&c=QzNjsxCNMcFNxpn4E2ocPvSU8Ud2S3B_mHyo5L-HOLo=',
-            description: 'Product 1 description',
-        },
-        {
-            id: 2,
-            name: 'Product 2',
-            image: 'https://media.istockphoto.com/id/943910360/photo/posters-in-cozy-apartment-interior.jpg?s=612x612&w=0&k=20&c=QzNjsxCNMcFNxpn4E2ocPvSU8Ud2S3B_mHyo5L-HOLo=',
-            description: 'Product 2 description',
-        },
-        {
-            id: 3,
-            name: 'Product 3',
-            image: 'https://media.istockphoto.com/id/943910360/photo/posters-in-cozy-apartment-interior.jpg?s=612x612&w=0&k=20&c=QzNjsxCNMcFNxpn4E2ocPvSU8Ud2S3B_mHyo5L-HOLo=',
-            description: 'Product 3 description',
-        },
+    const productsData = useMemo(() => [
+            {
+                id: 1,
+                name: 'Product 1',
+                image: 'https://media.istockphoto.com/id/943910360/photo/posters-in-cozy-apartment-interior.jpg?s=612x612&w=0&k=20&c=QzNjsxCNMcFNxpn4E2ocPvSU8Ud2S3B_mHyo5L-HOLo=',
+                description: 'Product 1 description',
+            },
+            {
+                id: 2,
+                name: 'Product 2',
+                image: 'https://media.istockphoto.com/id/943910360/photo/posters-in-cozy-apartment-interior.jpg?s=612x612&w=0&k=20&c=QzNjsxCNMcFNxpn4E2ocPvSU8Ud2S3B_mHyo5L-HOLo=',
+                description: 'Product 2 description',
+            },
+            {
+                id: 3,
+                name: 'Product 3',
+                image: 'https://media.istockphoto.com/id/943910360/photo/posters-in-cozy-apartment-interior.jpg?s=612x612&w=0&k=20&c=QzNjsxCNMcFNxpn4E2ocPvSU8Ud2S3B_mHyo5L-HOLo=',
+                description: 'Product 3 description',
+            },
+    
+            {
+                id: 4,
+                name: 'Product 4',  
+                image: 'https://media.istockphoto.com/id/943910360/photo/posters-in-cozy-apartment-interior.jpg?s=612x612&w=0&k=20&c=QzNjsxCNMcFNxpn4E2ocPvSU8Ud2S3B_mHyo5L-HOLo=',
+                description: 'Product 4 description',
+            },
+    
+            {
+                id: 5,
+                name: 'Product 5',
+                image: 'https://media.istockphoto.com/id/943910360/photo/posters-in-cozy-apartment-interior.jpg?s=612x612&w=0&k=20&c=QzNjsxCNMcFNxpn4E2ocPvSU8Ud2S3B_mHyo5L-HOLo=',
+                description: 'Product 5 description',
+            },
+    
+            {
+                id: 6,
+                name: 'Product 6',
+                image: 'https://media.istockphoto.com/id/943910360/photo/posters-in-cozy-apartment-interior.jpg?s=612x612&w=0&k=20&c=QzNjsxCNMcFNxpn4E2ocPvSU8Ud2S3B_mHyo5L-HOLo=',
+                description: 'Product 6 description',
+            }
+    ], []);
 
-        {
-            id: 4,
-            name: 'Product 4',  
-            image: 'https://media.istockphoto.com/id/943910360/photo/posters-in-cozy-apartment-interior.jpg?s=612x612&w=0&k=20&c=QzNjsxCNMcFNxpn4E2ocPvSU8Ud2S3B_mHyo5L-HOLo=',
-            description: 'Product 4 description',
-        },
-
-        {
-            id: 5,
-            name: 'Product 5',
-            image: 'https://media.istockphoto.com/id/943910360/photo/posters-in-cozy-apartment-interior.jpg?s=612x612&w=0&k=20&c=QzNjsxCNMcFNxpn4E2ocPvSU8Ud2S3B_mHyo5L-HOLo=',
-            description: 'Product 5 description',
-        },
-
-        {
-            id: 6,
-            name: 'Product 6',
-            image: 'https://media.istockphoto.com/id/943910360/photo/posters-in-cozy-apartment-interior.jpg?s=612x612&w=0&k=20&c=QzNjsxCNMcFNxpn4E2ocPvSU8Ud2S3B_mHyo5L-HOLo=',
-            description: 'Product 6 description',
-        },
-    ];
 
     useEffect(() => {
         setProducts(productsData)
