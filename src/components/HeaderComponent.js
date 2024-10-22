@@ -54,7 +54,7 @@ const HeaderComponent = () => {
       </div>
 
       
-      <div className='flex md:hidden justify-end gap-5 mx-10 mt-5'>
+      <div className='flex md:hidden items-center justify-end gap-5 mx-10 mt-5'>
         <div className='bg-green-500 p-1 rounded-full'>
           <i className="fa-solid fa-cart-shopping text-white"></i>
         </div>
