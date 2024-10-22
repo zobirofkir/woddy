@@ -2,7 +2,7 @@ import React from 'react'
 
 const SliderComponent = () => {
   return (
-    <div className='mx-auto bg-white t-10  rounded-lg shadow-lg overflow-hidden'>
+    <div className='mx-auto bg-white t-10  rounded-lg shadow-md overflow-hidden'>
         <div className='flex flex-col md:flex-row justify-between items-center w-full px-5 py-8 md:px-12 md:py-10'>
             <div className='w-full md:w-1/2 mb-5 md:mb-0'>
                 <h1 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>Modern Furniture for Minimalist Lovers</h1>
