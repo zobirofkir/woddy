@@ -1,12 +1,13 @@
 import React from 'react'
 import SliderComponent from '../components/SliderComponent'
+import ProductComponent from '../components/ProductComponent'
 
 const HomeScreen = () => {
   return (
     <div>
       <SliderComponent/>
       
-      <h1>HomeScreen</h1>
+      <ProductComponent/>
     </div>
   )
 }

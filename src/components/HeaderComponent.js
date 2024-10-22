@@ -42,10 +42,11 @@ const HeaderComponent = () => {
         </nav>
 
         
-        <div className='hidden md:flex gap-5 ml-10'>
+        <div className='hidden md:flex items-center gap-5 ml-10'>
           <div className='bg-green-500 p-2 rounded-full'>
             <i className="fa-solid fa-cart-shopping text-white"></i>
           </div>
+
           <div>
             <i className="fa-regular fa-user"></i>
           </div>
